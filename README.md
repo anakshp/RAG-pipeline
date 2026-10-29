@@ -2,6 +2,23 @@
 
 `restructured` consolidates the group's research and is the intended future main branch. Inclusion of a result here does not mean it has been selected for the paper.
 
+## 2026-10-29 — Google Drive research materials imported
+
+Copied the `analysis/final/` materials from the group Drive into this branch: Pearson correlation and paired-samples t-test R scripts, six numbered rating datasets (`r1.csv`–`r6.csv`), correlation plots and their Typst layout sources, and overall/per-criterion rating-distribution plots. Earlier `processing.Rmd`, processing reports and quantitative write-up files were preserved separately under `archive/drive_import/analysis/`.
+
+These uploads fill the previously identified code and summary-plot gaps. They are imported for team review; figure accuracy, statistical validity, anonymisation and the final manuscript version remain unconfirmed. Separate exported correlation/t-test result tables and a dedicated t-test effect/interval plot have not been identified in the imported set. Rating-distribution plots should not be labelled as t-test result plots.
+
+| Imported material | Repository location |
+| --- | --- |
+| Correlation and paired t-test code | `src/evaluation/r/` |
+| Numbered individual ratings | `data/qualitative/anonymised_ratings/` |
+| Original correlation and summary PDFs | `outputs/human_evaluation/drive_import/plots/` |
+| Typst layouts for combined correlation figures | `outputs/human_evaluation/drive_import/` |
+| Original R scripts before path adaptation | `archive/drive_import/original_scripts/` |
+| Earlier analysis source and reports | `archive/drive_import/analysis/` |
+
+The R scripts now resolve repository paths and write regenerated figures to `outputs/human_evaluation/reruns/`, preserving the imported figures. Statistical calculations were not changed or rerun. The source IDs, paths and SHA-256 hashes are recorded in [the import manifest](docs/drive_import_2026-10-29.json).
+
 ## Directory guide
 
 | Location | Contents |
@@ -33,23 +50,21 @@ This checklist reflects the group's meeting requirements. “Present” means th
 | MATTR code and visualisations | **Present** | `src/text_analysis/mattr_moving_average.py`, `outputs/mattr/`; confirm which `majority`, `middle` or `by_length` figure is final. |
 | POS-tagging code and visualisations | **Present** | `src/text_analysis/pos_tags.py`, `outputs/pos/`; `SPACE` is handled separately by `src/evaluation/space_significance_test.py`. |
 | DocuScope code and visualisations | **Present, with an external dependency** | `src/text_analysis/`, `data/processed/docuscope_runs/`, `outputs/docuscope/`; the DocuScope application/version and complete rerun procedure are not stored here. |
-| Summary statistics code and plots | **Partially present** | Summary code and CSV tables exist in `src/evaluation/qualitative_starter.py`, `src/text_analysis/low_high_per_model.py`, `data/qualitative/` and `outputs/human_evaluation/summary_stats/`. A clearly identified set of summary-statistics plots or a dedicated plotting script has not been found. |
-| Correlation statistics code and plots | **Missing / incomplete** | No independent correlation-analysis script, correlation-results directory or correlation plots have been identified. `significance_tests.py` contains a matched-pairs rank-biserial effect size, but this does not replace a complete correlation analysis. Please add the intended correlation definition, code, result tables and plots. |
-| Paired-samples t-test code and plots | **Missing** | No paired t-test script, output table or plot has been identified. Please add the script, test outputs, figure(s), input-rating definition and missing-value/pairing rules. |
+| Summary statistics code and plots | **Code and plots present; review pending** | Existing Python summaries are supplemented by `src/evaluation/r/paired_t.R` and `outputs/human_evaluation/drive_import/plots/`: `rating_dist.pdf`, `criteria_ratings_4o.pdf`, `criteria_ratings_5.2.pdf`. |
+| Correlation statistics code and plots | **Code and plots imported; review pending** | `src/evaluation/r/correlation.R` computes inter-rater Pearson correlation and RMSE at question-by-criterion, criterion and question levels. Six plot groups are under `outputs/human_evaluation/drive_import/plots/`. A separate exported results table is not included. |
+| Paired-samples t-test code and plots | **Code imported; result exports/plots still to confirm** | `src/evaluation/r/paired_t.R` includes paired tests, Bonferroni correction and effect sizes. Imported plots show rating distributions; a standalone t-test result table and dedicated effect/interval figure have not been identified. |
 | Text cleaning code | **Present** | `src/pipeline/pdf_to_txt.py`, `src/pipeline/text_cleaning_openai.py`, `src/text_analysis/cleaned_model_responses.py`; confirm which response dataset is the canonical input. |
 | RAG pipeline code | **Present but not fully reproducible** | `src/pipeline/rag_pipeline.py`; FAISS index, metadata, source corpus and index-building workflow remain external. The manuscript says top-k = 20 while the code uses `TOP_K = 40`; this needs confirmation. |
 | Comparative dataset / model responses | **Present, with versions to reconcile** | `data/responses/Team6_comparative_analysis.csv` is the current analysis input; `assets/` and `source_with_debris.csv` are retained legacy/source versions. Confirm the canonical file and model labels (`GPT-4`/`GPT-4o`). |
-| Anonymised individual ratings | **Present, anonymisation and pairing need confirmation** | `data/qualitative/raw_gradings/` and `data/qualitative/cleaned_gradings/` contain `A`, `K`, `L`, `S`, `Y` files. Confirm that these are final anonymous IDs, that no identity key is shared, and that they match the ratings used for the paired t-test and its plots. |
+| Anonymised individual ratings | **Numbered files imported; confirmation pending** | `data/qualitative/anonymised_ratings/r1.csv`–`r6.csv` are the inputs for the R scripts. They are separate from earlier raw/cleaned ratings. Confirm numbering and pairing with the team; `r6` has no GPT5 rows. No identity mapping has been added. |
 
-### Priority gaps before calling the repository complete
+### Remaining review and export tasks
 
-The most important missing uploads are:
-
-1. the paired-samples t-test script, result tables and plots;
-2. the correlation-analysis script, result tables and plots;
-3. clearly labelled summary-statistics plots and, if applicable, their plotting code.
-
-The repository also needs a short experiment note identifying the canonical response dataset, the model naming convention, the paired-rating sample, the t-test pairing rule and the correlation measure. Until these files and decisions are added, the corresponding requirements should be treated as incomplete rather than inferred from nearby significance-test outputs.
+1. Confirm whether the imported Drive `final/` set is the manuscript version; verify figures with their authors.
+2. Confirm the numbered ratings, missing-value handling and the paired sample. The R script pairs by rater, question and criterion; not every rater has both models.
+3. Confirm whether standalone correlation and t-test result tables should be exported. The imported R scripts calculate/print these values but do not save separate CSV result tables.
+4. Confirm whether a dedicated t-test effect/interval plot is required in addition to the available rating-distribution plots.
+5. Record the canonical response dataset, model naming convention and actual RAG top-k setting.
 
 ## Running analyses
 
@@ -79,6 +94,19 @@ python src/text_analysis/low_high_per_model.py
 Commands regenerate their output files. Save a result snapshot first when retaining every version matters. Significance tests include 10,000 permutations and 5,000 bootstrap samples.
 
 The optional `src/evaluation/generate_randomised_grading_forms.py` writes five ordering lists into `outputs/randomised_forms/generated/`. It displays model names, omits answer text and has no fixed seed; it is not a validated blinded-evaluation protocol.
+
+### Imported R analyses
+
+Install R and the `tidyverse`, `ggpubr` and `ggtext` packages, then run from the repository root:
+
+```bash
+Rscript src/evaluation/r/correlation.R
+Rscript src/evaluation/r/paired_t.R
+```
+
+The scripts read `data/qualitative/anonymised_ratings/` and write to `outputs/human_evaluation/reruns/`. Runtime package versions are not locked, and these analyses have not been executed as part of this import. The correlation script covers GPT4/GPT5; the paired model comparison uses GPT-4o/GPT-5.2, not RAG.
+
+The six Typst layouts retain their relative `plots/` references. Compile them from `outputs/human_evaluation/drive_import/` if needed, choosing a new output filename to preserve the imported PDF. The archived R Markdown source is a historical version, not an additional step in the current pipeline.
 
 ## RAG reproduction boundary
 

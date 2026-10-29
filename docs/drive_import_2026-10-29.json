@@ -1,0 +1,936 @@
+{
+  "import_date": "2026-10-29",
+  "source_folder": "https://drive.google.com/drive/folders/1rHc_7WcWZtvlXKYrr90xZOfNLymGd2cM",
+  "review_status": "Imported for team review; scientific results and final manuscript selection have not been verified.",
+  "files": [
+    {
+      "drive_id": "11m2TqBiRwlXWq3PpT5_yjjpx7DHZgyr5",
+      "source_path": "analysis/final/0a.typ",
+      "destination": "outputs/human_evaluation/drive_import/0a.typ",
+      "mime": "application/octet-stream",
+      "sha256": "464f3d4c215cb266de0502cd12a6ab28a74f3730034474e10389d954f9407b95",
+      "bytes": 1110,
+      "source_url": "https://drive.google.com/file/d/11m2TqBiRwlXWq3PpT5_yjjpx7DHZgyr5/view"
+    },
+    {
+      "drive_id": "1lTlPGh5X8Hmf-go4_2eZJo9lIr9z1aeY",
+      "source_path": "analysis/final/0b.typ",
+      "destination": "outputs/human_evaluation/drive_import/0b.typ",
+      "mime": "application/octet-stream",
+      "sha256": "e6a4792db08a641beca6d7a3dc321152c36a2ab5c6aebe2e45d3e290830bf8fb",
+      "bytes": 785,
+      "source_url": "https://drive.google.com/file/d/1lTlPGh5X8Hmf-go4_2eZJo9lIr9z1aeY/view"
+    },
+    {
+      "drive_id": "17nGgUGpBuigLJDWMZI0K0F4gQhUZFhkB",
+      "source_path": "analysis/final/1a.typ",
+      "destination": "outputs/human_evaluation/drive_import/1a.typ",
+      "mime": "application/octet-stream",
+      "sha256": "0b8dc75b907b43a020b92246410a13154c80cb9fb73ad9b3327d23ff15b26485",
+      "bytes": 1019,
+      "source_url": "https://drive.google.com/file/d/17nGgUGpBuigLJDWMZI0K0F4gQhUZFhkB/view"
+    },
+    {
+      "drive_id": "1jWB6bNRTAXiXU3GEeLU2EGqx2u_iN9_a",
+      "source_path": "analysis/final/1b.typ",
+      "destination": "outputs/human_evaluation/drive_import/1b.typ",
+      "mime": "application/octet-stream",
+      "sha256": "01ad7350b65c47e573bd103543a6e6e1060177d8c54048b34fe67f5bec272768",
+      "bytes": 765,
+      "source_url": "https://drive.google.com/file/d/1jWB6bNRTAXiXU3GEeLU2EGqx2u_iN9_a/view"
+    },
+    {
+      "drive_id": "1XjQQksfQd8AKDRfV9IL7fIGyVT6Kx5BZ",
+      "source_path": "analysis/final/2a.typ",
+      "destination": "outputs/human_evaluation/drive_import/2a.typ",
+      "mime": "application/octet-stream",
+      "sha256": "26514842a963c6fa9bce17503d2b0e9ed7bff5d667145556a71ca29be9822d95",
+      "bytes": 1019,
+      "source_url": "https://drive.google.com/file/d/1XjQQksfQd8AKDRfV9IL7fIGyVT6Kx5BZ/view"
+    },
+    {
+      "drive_id": "1U4rI8GfhqXXtNyQ7mQ2e36aU3AVWAwOb",
+      "source_path": "analysis/final/2b.typ",
+      "destination": "outputs/human_evaluation/drive_import/2b.typ",
+      "mime": "application/octet-stream",
+      "sha256": "381503c0c9894ac73c884f4faadabaaedba2b86fc1800e8b7d6a3b4bf65b95dd",
+      "bytes": 765,
+      "source_url": "https://drive.google.com/file/d/1U4rI8GfhqXXtNyQ7mQ2e36aU3AVWAwOb/view"
+    },
+    {
+      "drive_id": "1qGI4GyUTmVYCH5DDDd0-Nv5jSjkZCfM0",
+      "source_path": "analysis/final/correlation.R",
+      "destination": "archive/drive_import/original_scripts/correlation.R",
+      "mime": "application/octet-stream",
+      "sha256": "6d6c71cee950bc05afd358ad715d3fa0f1ce1453838f90d30ca644cf9b15ed7f",
+      "bytes": 12296,
+      "source_url": "https://drive.google.com/file/d/1qGI4GyUTmVYCH5DDDd0-Nv5jSjkZCfM0/view",
+      "active_destination": "src/evaluation/r/correlation.R"
+    },
+    {
+      "drive_id": "1ZOp3E9AQVITh0utk6IFQMLKSZvsizKcb",
+      "source_path": "analysis/final/paired_t.R",
+      "destination": "archive/drive_import/original_scripts/paired_t.R",
+      "mime": "application/octet-stream",
+      "sha256": "b95a25eada7e64a7ead90485efb9ebb2443bd7ab02e6d17974e457f1ca532152",
+      "bytes": 5700,
+      "source_url": "https://drive.google.com/file/d/1ZOp3E9AQVITh0utk6IFQMLKSZvsizKcb/view",
+      "active_destination": "src/evaluation/r/paired_t.R"
+    },
+    {
+      "drive_id": "1aqBI9CWbLxdUzXu8rnMCMPPfhGjlTPCK",
+      "source_path": "analysis/final/data/r1.csv",
+      "destination": "data/qualitative/anonymised_ratings/r1.csv",
+      "mime": "text/csv",
+      "sha256": "a67544baa7d46a4d46df1351e91c7d4faba5dbe62750fcc5cf9adc0343579f7e",
+      "bytes": 1731,
+      "source_url": "https://drive.google.com/file/d/1aqBI9CWbLxdUzXu8rnMCMPPfhGjlTPCK/view"
+    },
+    {
+      "drive_id": "1BKaKzUa_ZI6RTGnxlO17S_J0ReurPL-D",
+      "source_path": "analysis/final/data/r2.csv",
+      "destination": "data/qualitative/anonymised_ratings/r2.csv",
+      "mime": "text/csv",
+      "sha256": "af56f60193ab2461be15301c219d8be17383db5ecc897b5a514a2426a82e1e1d",
+      "bytes": 1094,
+      "source_url": "https://drive.google.com/file/d/1BKaKzUa_ZI6RTGnxlO17S_J0ReurPL-D/view"
+    },
+    {
+      "drive_id": "1dwk1Vza33nYeQGxm-WrcTgr71Y80FAjq",
+      "source_path": "analysis/final/data/r3.csv",
+      "destination": "data/qualitative/anonymised_ratings/r3.csv",
+      "mime": "text/csv",
+      "sha256": "22d243030e8b045dc99d1687c7da2810216ba470cc44884747e4b410eec483b5",
+      "bytes": 1757,
+      "source_url": "https://drive.google.com/file/d/1dwk1Vza33nYeQGxm-WrcTgr71Y80FAjq/view"
+    },
+    {
+      "drive_id": "1SqbWWscVrL3eD5Jq3Mn8i27Ag8hY_YaW",
+      "source_path": "analysis/final/data/r4.csv",
+      "destination": "data/qualitative/anonymised_ratings/r4.csv",
+      "mime": "text/csv",
+      "sha256": "d2a6422effe69dc4ef45cfa15bf8975275a19f997170a067078c1742f6354d3f",
+      "bytes": 1707,
+      "source_url": "https://drive.google.com/file/d/1SqbWWscVrL3eD5Jq3Mn8i27Ag8hY_YaW/view"
+    },
+    {
+      "drive_id": "1G46sH87opKolvBbDylv85bYI3SbL0mHE",
+      "source_path": "analysis/final/data/r5.csv",
+      "destination": "data/qualitative/anonymised_ratings/r5.csv",
+      "mime": "text/csv",
+      "sha256": "b6c8c8e20290e898a2b166b10a4d2967769bc4c90e4374f49a40000ca5c99584",
+      "bytes": 1684,
+      "source_url": "https://drive.google.com/file/d/1G46sH87opKolvBbDylv85bYI3SbL0mHE/view"
+    },
+    {
+      "drive_id": "1OFwCI7_4oTpGKVBlX2hMKiQDgUWSId29",
+      "source_path": "analysis/final/data/r6.csv",
+      "destination": "data/qualitative/anonymised_ratings/r6.csv",
+      "mime": "text/csv",
+      "sha256": "a8602246bd4c470d10d0d9df0e3e55fc03320064c137aca4b8453d1a262ac9e2",
+      "bytes": 1310,
+      "source_url": "https://drive.google.com/file/d/1OFwCI7_4oTpGKVBlX2hMKiQDgUWSId29/view"
+    },
+    {
+      "drive_id": "14Z6mAIiTDnBiC5Gsn6Uk56-9GbsSflGW",
+      "source_path": "analysis/final/plots/0a.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0a.pdf",
+      "mime": "application/pdf",
+      "sha256": "4aa7ee95d082668343458040fccdc616652567f41a2813b0e18d346d4ac468fe",
+      "bytes": 137628,
+      "source_url": "https://drive.google.com/file/d/14Z6mAIiTDnBiC5Gsn6Uk56-9GbsSflGW/view"
+    },
+    {
+      "drive_id": "1-tJSLvagYeTzesRDFprFTpHjYf20mHe9",
+      "source_path": "analysis/final/plots/0b.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0b.pdf",
+      "mime": "application/pdf",
+      "sha256": "ada4af098633d9b3592da36c4ddf48ac23f483214601635b0da54346b1c7efc6",
+      "bytes": 86738,
+      "source_url": "https://drive.google.com/file/d/1-tJSLvagYeTzesRDFprFTpHjYf20mHe9/view"
+    },
+    {
+      "drive_id": "1Jh12QpUJy1EbFF2YTgh3fik2oAeo9VNf",
+      "source_path": "analysis/final/plots/1a.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1a.pdf",
+      "mime": "application/pdf",
+      "sha256": "a636d4936b9dc7b3b1c66659ec8dac954fdf6249c66bb42a4e36cf2ea1bec9d3",
+      "bytes": 94847,
+      "source_url": "https://drive.google.com/file/d/1Jh12QpUJy1EbFF2YTgh3fik2oAeo9VNf/view"
+    },
+    {
+      "drive_id": "1Jzn3Jol48NDPZzLWiWQZwRE6bk_TEvxM",
+      "source_path": "analysis/final/plots/1b.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1b.pdf",
+      "mime": "application/pdf",
+      "sha256": "94f274d7171ba95077f7e6be7050c1969c1c6f324a8efb6cffbc05744bd320e0",
+      "bytes": 65225,
+      "source_url": "https://drive.google.com/file/d/1Jzn3Jol48NDPZzLWiWQZwRE6bk_TEvxM/view"
+    },
+    {
+      "drive_id": "1Jkqqaew654k__4FxrLf7Yq5eynWWORpq",
+      "source_path": "analysis/final/plots/2a.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2a.pdf",
+      "mime": "application/pdf",
+      "sha256": "c31b353eb0064b630fc0fb926d0aba8537069e0409024690fbeef5f8ca11ed81",
+      "bytes": 96419,
+      "source_url": "https://drive.google.com/file/d/1Jkqqaew654k__4FxrLf7Yq5eynWWORpq/view"
+    },
+    {
+      "drive_id": "1tCBjcjr5jqfh2x4mnNtGzn6hYJyBKtaF",
+      "source_path": "analysis/final/plots/2b.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2b.pdf",
+      "mime": "application/pdf",
+      "sha256": "5cece703411398ff17c22010e2c207ae95e4c4abd921712572938e69d9cb59dc",
+      "bytes": 64683,
+      "source_url": "https://drive.google.com/file/d/1tCBjcjr5jqfh2x4mnNtGzn6hYJyBKtaF/view"
+    },
+    {
+      "drive_id": "15PNQNuaIUlvfMFdVwjCDZoipV4fczrUg",
+      "source_path": "analysis/final/plots/criteria_ratings_4o.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/criteria_ratings_4o.pdf",
+      "mime": "application/pdf",
+      "sha256": "ba20041758626100cf2282166f4e21d8cf12c6c6033564a957216f418899b452",
+      "bytes": 7812,
+      "source_url": "https://drive.google.com/file/d/15PNQNuaIUlvfMFdVwjCDZoipV4fczrUg/view"
+    },
+    {
+      "drive_id": "1dMP9KRIxzmlOROFh7cg_td4luM2NOKWQ",
+      "source_path": "analysis/final/plots/criteria_ratings_5.2.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/criteria_ratings_5.2.pdf",
+      "mime": "application/pdf",
+      "sha256": "70ef88d5e909122dbc436f0b2983b717dd4e9ad36b296ea11430a13fddfa3caf",
+      "bytes": 7823,
+      "source_url": "https://drive.google.com/file/d/1dMP9KRIxzmlOROFh7cg_td4luM2NOKWQ/view"
+    },
+    {
+      "drive_id": "1ztg6ioCEjTdmGvHgGLKaZUsAJq2H6uQd",
+      "source_path": "analysis/final/plots/rating_dist.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/rating_dist.pdf",
+      "mime": "application/pdf",
+      "sha256": "a564e3c74c101d9134536f501ad7de389eacd2ad645562a0bab8191aec60eee9",
+      "bytes": 5224,
+      "source_url": "https://drive.google.com/file/d/1ztg6ioCEjTdmGvHgGLKaZUsAJq2H6uQd/view"
+    },
+    {
+      "drive_id": "12Ts2TED99MqLass5dC4HdTDpau8Saxth",
+      "source_path": "analysis/final/plots/0a_qxc_gpt4/r1_vs_r2.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0a_qxc_gpt4/r1_vs_r2.pdf",
+      "mime": "application/pdf",
+      "sha256": "14081dee87a458530aa3368ac50c649b447676a76fb900b5a44761295fbe1775",
+      "bytes": 8115,
+      "source_url": "https://drive.google.com/file/d/12Ts2TED99MqLass5dC4HdTDpau8Saxth/view"
+    },
+    {
+      "drive_id": "17y6CWdI1v13hUU28SRsp1ZaNG57lxI2y",
+      "source_path": "analysis/final/plots/0a_qxc_gpt4/r1_vs_r3.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0a_qxc_gpt4/r1_vs_r3.pdf",
+      "mime": "application/pdf",
+      "sha256": "55217a1ac588ccb217b8aa10888076a0f987f6d1328c5d7169f489ca932dbc05",
+      "bytes": 8761,
+      "source_url": "https://drive.google.com/file/d/17y6CWdI1v13hUU28SRsp1ZaNG57lxI2y/view"
+    },
+    {
+      "drive_id": "1Y9rkyUw-WJrUHriXkG0bynQC5Zuu87Xg",
+      "source_path": "analysis/final/plots/0a_qxc_gpt4/r1_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0a_qxc_gpt4/r1_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "f3b4fd46d564295eefacf4dd2bb3a751b2a60af30b03a6d0e1e73b9f9b768446",
+      "bytes": 8464,
+      "source_url": "https://drive.google.com/file/d/1Y9rkyUw-WJrUHriXkG0bynQC5Zuu87Xg/view"
+    },
+    {
+      "drive_id": "1KFXHZHLD1qsQ-0XFteoOS31AlkSvdG33",
+      "source_path": "analysis/final/plots/0a_qxc_gpt4/r1_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0a_qxc_gpt4/r1_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "a91f074e4c786272e3655cd9b732a8865de0a1e66e1d7fe26467036ad649591a",
+      "bytes": 8154,
+      "source_url": "https://drive.google.com/file/d/1KFXHZHLD1qsQ-0XFteoOS31AlkSvdG33/view"
+    },
+    {
+      "drive_id": "1S-4S3lQCpiFq_WUUJE5kSUhTbQqVW0jc",
+      "source_path": "analysis/final/plots/0a_qxc_gpt4/r1_vs_r6.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0a_qxc_gpt4/r1_vs_r6.pdf",
+      "mime": "application/pdf",
+      "sha256": "46530861e4f792424cd4b2522be766fc20531b4ee20dd5e72ef143bb9c18dd86",
+      "bytes": 10525,
+      "source_url": "https://drive.google.com/file/d/1S-4S3lQCpiFq_WUUJE5kSUhTbQqVW0jc/view"
+    },
+    {
+      "drive_id": "13KwlSAKWf1Zpd8_iUFym_mfGxCa0ftGm",
+      "source_path": "analysis/final/plots/0a_qxc_gpt4/r2_vs_r3.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0a_qxc_gpt4/r2_vs_r3.pdf",
+      "mime": "application/pdf",
+      "sha256": "295eb72eb2a5fff632b70d7e265a9f8a3f33f1822e862a893494ca94230ba3ca",
+      "bytes": 8244,
+      "source_url": "https://drive.google.com/file/d/13KwlSAKWf1Zpd8_iUFym_mfGxCa0ftGm/view"
+    },
+    {
+      "drive_id": "1YS9WWpfCkrw7-YQdUS7xc5JsKvbTNFhk",
+      "source_path": "analysis/final/plots/0a_qxc_gpt4/r2_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0a_qxc_gpt4/r2_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "cfc38ee7610a5a05ea712a1cae411be0ad67767ea935d66a1d5488358d6e2e0a",
+      "bytes": 7551,
+      "source_url": "https://drive.google.com/file/d/1YS9WWpfCkrw7-YQdUS7xc5JsKvbTNFhk/view"
+    },
+    {
+      "drive_id": "13UzUQTE-_fGLp5oJ1OnWy71zou4V7fe6",
+      "source_path": "analysis/final/plots/0a_qxc_gpt4/r2_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0a_qxc_gpt4/r2_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "5a92008bb959e8944118c5f1cec565505a84869404f9bcc0a579dab8e891f536",
+      "bytes": 6922,
+      "source_url": "https://drive.google.com/file/d/13UzUQTE-_fGLp5oJ1OnWy71zou4V7fe6/view"
+    },
+    {
+      "drive_id": "12iC78PlorceC19PPP6bXwdKUgGFMJNyN",
+      "source_path": "analysis/final/plots/0a_qxc_gpt4/r2_vs_r6.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0a_qxc_gpt4/r2_vs_r6.pdf",
+      "mime": "application/pdf",
+      "sha256": "5a26ff6223c7a4e392294607f7fb773c1644a19ad8cd5976528aa679cda42475",
+      "bytes": 9682,
+      "source_url": "https://drive.google.com/file/d/12iC78PlorceC19PPP6bXwdKUgGFMJNyN/view"
+    },
+    {
+      "drive_id": "1YhQ23rtfUuHA9RMvVBpd28p9K7nfLW6_",
+      "source_path": "analysis/final/plots/0a_qxc_gpt4/r3_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0a_qxc_gpt4/r3_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "8bd451e28cb3470d541c78677be3462c1c37693da5af256cd28a58246ddfb0fb",
+      "bytes": 8491,
+      "source_url": "https://drive.google.com/file/d/1YhQ23rtfUuHA9RMvVBpd28p9K7nfLW6_/view"
+    },
+    {
+      "drive_id": "1ZZYsYs2PEuqEHQzPdz_XmIUiyEK1FwFx",
+      "source_path": "analysis/final/plots/0a_qxc_gpt4/r3_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0a_qxc_gpt4/r3_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "17795f073594be07a8d1ec9e7fd81e8166c857b7750eb4fad7e97a07b20e3b7a",
+      "bytes": 8793,
+      "source_url": "https://drive.google.com/file/d/1ZZYsYs2PEuqEHQzPdz_XmIUiyEK1FwFx/view"
+    },
+    {
+      "drive_id": "1IvLY0_sJY4LzxSuXNU9xKunMAno9liHV",
+      "source_path": "analysis/final/plots/0a_qxc_gpt4/r3_vs_r6.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0a_qxc_gpt4/r3_vs_r6.pdf",
+      "mime": "application/pdf",
+      "sha256": "5ef6f5db0a09d7cbf093344f220bf8e400997847ba0c2ad70c6beb9ac8ac98bf",
+      "bytes": 10945,
+      "source_url": "https://drive.google.com/file/d/1IvLY0_sJY4LzxSuXNU9xKunMAno9liHV/view"
+    },
+    {
+      "drive_id": "190WVHQvGjawL-9lErGOuWSKQn2tVprwC",
+      "source_path": "analysis/final/plots/0a_qxc_gpt4/r4_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0a_qxc_gpt4/r4_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "2a4bd0b59cd033495eccd704cc00d7d25175b4e6254625848b3355f22779154b",
+      "bytes": 8459,
+      "source_url": "https://drive.google.com/file/d/190WVHQvGjawL-9lErGOuWSKQn2tVprwC/view"
+    },
+    {
+      "drive_id": "1VKyywAo7_CRd5GE85EE3c9MyhjOh00C5",
+      "source_path": "analysis/final/plots/0a_qxc_gpt4/r4_vs_r6.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0a_qxc_gpt4/r4_vs_r6.pdf",
+      "mime": "application/pdf",
+      "sha256": "ade6295aa3dd64f3dd257c3e1e3e62fb370ff1add803f609494286989614bfdc",
+      "bytes": 10272,
+      "source_url": "https://drive.google.com/file/d/1VKyywAo7_CRd5GE85EE3c9MyhjOh00C5/view"
+    },
+    {
+      "drive_id": "13hiDn7q8HkUnTldf2V8hYP9dkGADuqcf",
+      "source_path": "analysis/final/plots/0a_qxc_gpt4/r5_vs_r6.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0a_qxc_gpt4/r5_vs_r6.pdf",
+      "mime": "application/pdf",
+      "sha256": "553e3eb85a19ef8cfc307e08768eb2d8773f752ddf1964dac465ec93cfc3b214",
+      "bytes": 10022,
+      "source_url": "https://drive.google.com/file/d/13hiDn7q8HkUnTldf2V8hYP9dkGADuqcf/view"
+    },
+    {
+      "drive_id": "1FjJBpVcpWB1aQNL7KEVvvbKnzbTzq_kM",
+      "source_path": "analysis/final/plots/0b_qxc_gpt5/r1_vs_r2.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0b_qxc_gpt5/r1_vs_r2.pdf",
+      "mime": "application/pdf",
+      "sha256": "df70791d14049e8de18750559df2bd51ee9f4d55ebf48499697e5d222a2de517",
+      "bytes": 8110,
+      "source_url": "https://drive.google.com/file/d/1FjJBpVcpWB1aQNL7KEVvvbKnzbTzq_kM/view"
+    },
+    {
+      "drive_id": "1W2DYHY1C6RlcJJ4h4Dmrt5q6QZxbiSgl",
+      "source_path": "analysis/final/plots/0b_qxc_gpt5/r1_vs_r3.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0b_qxc_gpt5/r1_vs_r3.pdf",
+      "mime": "application/pdf",
+      "sha256": "0023047ca4b5d60dce6246455357305804a6f4d927fce9712a3fa86c4aa43c60",
+      "bytes": 8765,
+      "source_url": "https://drive.google.com/file/d/1W2DYHY1C6RlcJJ4h4Dmrt5q6QZxbiSgl/view"
+    },
+    {
+      "drive_id": "1HR4248Sz3KUFXSGaZ_0CNwReh954eroD",
+      "source_path": "analysis/final/plots/0b_qxc_gpt5/r1_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0b_qxc_gpt5/r1_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "0c2d47f54f91221f6de78eb6be231bfd8fb26181691c6edb7f34da05b7d71222",
+      "bytes": 8356,
+      "source_url": "https://drive.google.com/file/d/1HR4248Sz3KUFXSGaZ_0CNwReh954eroD/view"
+    },
+    {
+      "drive_id": "1CMp6fw0KWC6qlb4cTww9-F7-iess9vOI",
+      "source_path": "analysis/final/plots/0b_qxc_gpt5/r1_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0b_qxc_gpt5/r1_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "6896aa68a77e7f4fa440e5cc3daeeff869bd132edf28aa77766649b7086b9f88",
+      "bytes": 8151,
+      "source_url": "https://drive.google.com/file/d/1CMp6fw0KWC6qlb4cTww9-F7-iess9vOI/view"
+    },
+    {
+      "drive_id": "1eMi8KqfyHyKSTXp1Xvg-wM6pxZSg8iR3",
+      "source_path": "analysis/final/plots/0b_qxc_gpt5/r2_vs_r3.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0b_qxc_gpt5/r2_vs_r3.pdf",
+      "mime": "application/pdf",
+      "sha256": "60c497de66f8dfcc54c7e1058ab9374e1af3b8655c1ca9c7e4bc7596a7f76bfc",
+      "bytes": 8217,
+      "source_url": "https://drive.google.com/file/d/1eMi8KqfyHyKSTXp1Xvg-wM6pxZSg8iR3/view"
+    },
+    {
+      "drive_id": "1CRMW7Lp7qHb7HMbdAcI_Z1P1ZYZqSQCs",
+      "source_path": "analysis/final/plots/0b_qxc_gpt5/r2_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0b_qxc_gpt5/r2_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "fcade2ec80e4aa8de7e6bf6c30d2d22786d9e188ee2c112c257fb910286b05af",
+      "bytes": 7564,
+      "source_url": "https://drive.google.com/file/d/1CRMW7Lp7qHb7HMbdAcI_Z1P1ZYZqSQCs/view"
+    },
+    {
+      "drive_id": "1oYHMS7zOZppisa83_8_VR6PHomZDrYUs",
+      "source_path": "analysis/final/plots/0b_qxc_gpt5/r2_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0b_qxc_gpt5/r2_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "bc6e196d71326ff8e06c0afbc51c09e32724488ba0b9072ec7f8d5a348d14721",
+      "bytes": 6952,
+      "source_url": "https://drive.google.com/file/d/1oYHMS7zOZppisa83_8_VR6PHomZDrYUs/view"
+    },
+    {
+      "drive_id": "12SYW3GnOUPHrsZ79JHEbfTw970AmIiMZ",
+      "source_path": "analysis/final/plots/0b_qxc_gpt5/r3_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0b_qxc_gpt5/r3_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "9c3002e6aa00602dbe4f0cd4f94e57544a2c39272ae2f87e2c4006282d0b0f2a",
+      "bytes": 8481,
+      "source_url": "https://drive.google.com/file/d/12SYW3GnOUPHrsZ79JHEbfTw970AmIiMZ/view"
+    },
+    {
+      "drive_id": "1_l5u0zlPZ5OFr4mWZiNkKeaPRTzOgDc9",
+      "source_path": "analysis/final/plots/0b_qxc_gpt5/r3_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0b_qxc_gpt5/r3_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "f0a5d340576ce2076cfac59549831502c99bff57a9305d9d7bc941a8aec1fc3a",
+      "bytes": 8782,
+      "source_url": "https://drive.google.com/file/d/1_l5u0zlPZ5OFr4mWZiNkKeaPRTzOgDc9/view"
+    },
+    {
+      "drive_id": "1yjK_r-q2NF08oj1eAEypQa9-DrRxhbnC",
+      "source_path": "analysis/final/plots/0b_qxc_gpt5/r4_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/0b_qxc_gpt5/r4_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "738a173f9d84e5be1990b2719c30ec31ec0316b84b0374a5f159b5785a76f4a6",
+      "bytes": 8435,
+      "source_url": "https://drive.google.com/file/d/1yjK_r-q2NF08oj1eAEypQa9-DrRxhbnC/view"
+    },
+    {
+      "drive_id": "1gQxtI3roKkrINLulDgfYxrb-DPwR8pwg",
+      "source_path": "analysis/final/plots/1a_c_gpt4/r1_vs_r2.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1a_c_gpt4/r1_vs_r2.pdf",
+      "mime": "application/pdf",
+      "sha256": "e3af4f0bbecd36bfabcb3b0de999ad1afe6fec842b2680ae95ab9aaf7f9cd171",
+      "bytes": 6052,
+      "source_url": "https://drive.google.com/file/d/1gQxtI3roKkrINLulDgfYxrb-DPwR8pwg/view"
+    },
+    {
+      "drive_id": "1zOutarVLVsCy6T0bD1HFrGEnVq4R34iz",
+      "source_path": "analysis/final/plots/1a_c_gpt4/r1_vs_r3.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1a_c_gpt4/r1_vs_r3.pdf",
+      "mime": "application/pdf",
+      "sha256": "f7e21dc87fa3de8b07e4070233dc8343cb9411d51a3f89f9b5c35bed3ac12af2",
+      "bytes": 6055,
+      "source_url": "https://drive.google.com/file/d/1zOutarVLVsCy6T0bD1HFrGEnVq4R34iz/view"
+    },
+    {
+      "drive_id": "1F-Ei6zC4xv82477WJvsEQxD2sglNaMoJ",
+      "source_path": "analysis/final/plots/1a_c_gpt4/r1_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1a_c_gpt4/r1_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "d9c9cc768f2a7ed20b8da19baf1f2866350427d3321cfe85ee4f4d729835ee73",
+      "bytes": 6076,
+      "source_url": "https://drive.google.com/file/d/1F-Ei6zC4xv82477WJvsEQxD2sglNaMoJ/view"
+    },
+    {
+      "drive_id": "1nyvE3mRvzfOZSewAYa6H2MlWKfCeKwk4",
+      "source_path": "analysis/final/plots/1a_c_gpt4/r1_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1a_c_gpt4/r1_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "1a861040ce29245045d44bea492e570d8d933fa6315508d19c78cef446c5601d",
+      "bytes": 6061,
+      "source_url": "https://drive.google.com/file/d/1nyvE3mRvzfOZSewAYa6H2MlWKfCeKwk4/view"
+    },
+    {
+      "drive_id": "11vxQvI2HLhSfNFUV5M7NX1YBGWG7nMYf",
+      "source_path": "analysis/final/plots/1a_c_gpt4/r1_vs_r6.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1a_c_gpt4/r1_vs_r6.pdf",
+      "mime": "application/pdf",
+      "sha256": "0bbfcaf15f236fe522df9527d826837a1a64a849820f059dfe587681c07f312e",
+      "bytes": 6008,
+      "source_url": "https://drive.google.com/file/d/11vxQvI2HLhSfNFUV5M7NX1YBGWG7nMYf/view"
+    },
+    {
+      "drive_id": "1RVbzATSuxrLVIccdiTpgdzK2p-7NaLVl",
+      "source_path": "analysis/final/plots/1a_c_gpt4/r2_vs_r3.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1a_c_gpt4/r2_vs_r3.pdf",
+      "mime": "application/pdf",
+      "sha256": "211070e1a40ebf77d956a70ca3e2ef7452460a2991eac0e5337318015f14f928",
+      "bytes": 6086,
+      "source_url": "https://drive.google.com/file/d/1RVbzATSuxrLVIccdiTpgdzK2p-7NaLVl/view"
+    },
+    {
+      "drive_id": "1GQkdWgCtqN28EraIv_Rbz3FK3liiOshf",
+      "source_path": "analysis/final/plots/1a_c_gpt4/r2_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1a_c_gpt4/r2_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "84efb7c5682f5ba21f577dfcacba418b6fdb4c821ae0ab99aee3f9c7914098b9",
+      "bytes": 6083,
+      "source_url": "https://drive.google.com/file/d/1GQkdWgCtqN28EraIv_Rbz3FK3liiOshf/view"
+    },
+    {
+      "drive_id": "1BxThsWZzOVAhHL1Kf4WIictGsFs4CBPf",
+      "source_path": "analysis/final/plots/1a_c_gpt4/r2_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1a_c_gpt4/r2_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "8782ccda0aabe0046faaf4eed574ccd28ac64acf029f74b04384195ffd068cf4",
+      "bytes": 6076,
+      "source_url": "https://drive.google.com/file/d/1BxThsWZzOVAhHL1Kf4WIictGsFs4CBPf/view"
+    },
+    {
+      "drive_id": "1FU5HUN6p15QzHLjLVCoKNMILyzxS0U6i",
+      "source_path": "analysis/final/plots/1a_c_gpt4/r2_vs_r6.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1a_c_gpt4/r2_vs_r6.pdf",
+      "mime": "application/pdf",
+      "sha256": "67d9780164b7122f24cb6cd74b99cc793209bf9eb706ec200d88156e832333d7",
+      "bytes": 6031,
+      "source_url": "https://drive.google.com/file/d/1FU5HUN6p15QzHLjLVCoKNMILyzxS0U6i/view"
+    },
+    {
+      "drive_id": "1Uvx4FLPoj_leCy_5Wf7VNSlBsVu80bEo",
+      "source_path": "analysis/final/plots/1a_c_gpt4/r3_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1a_c_gpt4/r3_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "ec1714bfba3d0c785e5b4cd58e1207925843ba0d1a32cfc84b3e79c38c322840",
+      "bytes": 6039,
+      "source_url": "https://drive.google.com/file/d/1Uvx4FLPoj_leCy_5Wf7VNSlBsVu80bEo/view"
+    },
+    {
+      "drive_id": "1Vw7jJ-nCqnuBP0Sayt4QXbGvGAGgNyhX",
+      "source_path": "analysis/final/plots/1a_c_gpt4/r3_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1a_c_gpt4/r3_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "3570196b07f6f4f4f9a825a9c270e2196c4fdf7d6f10f6dff5ef1bbe3949343f",
+      "bytes": 6058,
+      "source_url": "https://drive.google.com/file/d/1Vw7jJ-nCqnuBP0Sayt4QXbGvGAGgNyhX/view"
+    },
+    {
+      "drive_id": "1VtzUcUlzVIBYM42JzVPJKTQYS75QptiS",
+      "source_path": "analysis/final/plots/1a_c_gpt4/r3_vs_r6.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1a_c_gpt4/r3_vs_r6.pdf",
+      "mime": "application/pdf",
+      "sha256": "37399bb3e4117f88e71d68cf90a9ab36bfd237dc78392d1b2cccec7f02a1187e",
+      "bytes": 5956,
+      "source_url": "https://drive.google.com/file/d/1VtzUcUlzVIBYM42JzVPJKTQYS75QptiS/view"
+    },
+    {
+      "drive_id": "1A4XNFLzUiRASisD0Yi_99D45ukunZuoY",
+      "source_path": "analysis/final/plots/1a_c_gpt4/r4_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1a_c_gpt4/r4_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "e69d4f295fac182903a9c03a444f5c070de2dfbd68e91800677b2cfcaf3fc1e6",
+      "bytes": 6018,
+      "source_url": "https://drive.google.com/file/d/1A4XNFLzUiRASisD0Yi_99D45ukunZuoY/view"
+    },
+    {
+      "drive_id": "1nOUwDsrYkxzWuLhn_ueXkytDpX5cxZyJ",
+      "source_path": "analysis/final/plots/1a_c_gpt4/r4_vs_r6.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1a_c_gpt4/r4_vs_r6.pdf",
+      "mime": "application/pdf",
+      "sha256": "c1d62e3be507f41c8e0266556d4a0d250c19b3ed318d341d1be9b89b7c9d2470",
+      "bytes": 6036,
+      "source_url": "https://drive.google.com/file/d/1nOUwDsrYkxzWuLhn_ueXkytDpX5cxZyJ/view"
+    },
+    {
+      "drive_id": "1OtJBneVEE6UXHt57LmtpbNwLGjbHlbiG",
+      "source_path": "analysis/final/plots/1a_c_gpt4/r5_vs_r6.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1a_c_gpt4/r5_vs_r6.pdf",
+      "mime": "application/pdf",
+      "sha256": "82289f5baa2c8f815a11d576370f41793d07c467cc2eefd3ba1c32b09051807e",
+      "bytes": 6053,
+      "source_url": "https://drive.google.com/file/d/1OtJBneVEE6UXHt57LmtpbNwLGjbHlbiG/view"
+    },
+    {
+      "drive_id": "1Cr6-AtBW1uya1wSk0miS0vTAjEyrt0zG",
+      "source_path": "analysis/final/plots/1b_c_gpt5/r1_vs_r2.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1b_c_gpt5/r1_vs_r2.pdf",
+      "mime": "application/pdf",
+      "sha256": "49db4d119c8da5da539435c5d0e501b0f4b19942c355b7d882a4bbee3eb1ce2d",
+      "bytes": 6032,
+      "source_url": "https://drive.google.com/file/d/1Cr6-AtBW1uya1wSk0miS0vTAjEyrt0zG/view"
+    },
+    {
+      "drive_id": "1L3ft_RPZ7E_4tlAozBo2uMSEpSHCvOiF",
+      "source_path": "analysis/final/plots/1b_c_gpt5/r1_vs_r3.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1b_c_gpt5/r1_vs_r3.pdf",
+      "mime": "application/pdf",
+      "sha256": "25e5330383bbfdf22e01764abed997e14ee70bca0186ac9ffded7a3268581a8b",
+      "bytes": 6007,
+      "source_url": "https://drive.google.com/file/d/1L3ft_RPZ7E_4tlAozBo2uMSEpSHCvOiF/view"
+    },
+    {
+      "drive_id": "1ZuB-wmQMfWTvReXjsURshkGKj7eYVydo",
+      "source_path": "analysis/final/plots/1b_c_gpt5/r1_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1b_c_gpt5/r1_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "571faed3446269e39b016945a084a52cbccf85ba7edb998c54cc5afef3de458d",
+      "bytes": 5993,
+      "source_url": "https://drive.google.com/file/d/1ZuB-wmQMfWTvReXjsURshkGKj7eYVydo/view"
+    },
+    {
+      "drive_id": "1mtQ3-FLVVU3qWE6W1Dr3gxaA2-aaYRMs",
+      "source_path": "analysis/final/plots/1b_c_gpt5/r1_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1b_c_gpt5/r1_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "69b4d923cb3d5b71443efa2dad9fb0b8bcdef3b1c1fd4f29390509bad564fbce",
+      "bytes": 5991,
+      "source_url": "https://drive.google.com/file/d/1mtQ3-FLVVU3qWE6W1Dr3gxaA2-aaYRMs/view"
+    },
+    {
+      "drive_id": "1sCNOqTiYDLJxT1GrDnIys2fxQ37HUAy-",
+      "source_path": "analysis/final/plots/1b_c_gpt5/r2_vs_r3.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1b_c_gpt5/r2_vs_r3.pdf",
+      "mime": "application/pdf",
+      "sha256": "7e9a7ae1faefe9ab2a28ea5210d9b9d8f933ee98b06c5852b7a9aebc02f3fa32",
+      "bytes": 6070,
+      "source_url": "https://drive.google.com/file/d/1sCNOqTiYDLJxT1GrDnIys2fxQ37HUAy-/view"
+    },
+    {
+      "drive_id": "1bgfMtMrM_j5yGw4IFm31vraryQXF3IQm",
+      "source_path": "analysis/final/plots/1b_c_gpt5/r2_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1b_c_gpt5/r2_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "ebb31f84e1a7ed4eafe16f0b33c18ba8001ce1749b8c60353d26e08d0a8d12b5",
+      "bytes": 6053,
+      "source_url": "https://drive.google.com/file/d/1bgfMtMrM_j5yGw4IFm31vraryQXF3IQm/view"
+    },
+    {
+      "drive_id": "1U4-keJVbbHvy3oIms0VZvFElmdR9ArGB",
+      "source_path": "analysis/final/plots/1b_c_gpt5/r2_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1b_c_gpt5/r2_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "7e39e688147ae461caaf4bc47d2468a07e0fe4b66dc7ed6146ab548f193b609a",
+      "bytes": 6006,
+      "source_url": "https://drive.google.com/file/d/1U4-keJVbbHvy3oIms0VZvFElmdR9ArGB/view"
+    },
+    {
+      "drive_id": "1CW2vC5fNm-rDjjk4H2y5ivOTZ5EEx1Cg",
+      "source_path": "analysis/final/plots/1b_c_gpt5/r3_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1b_c_gpt5/r3_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "a562f91d45b4788b72d0a13a8623d2d05b8c0880e91c05d04641bbc3e48c987d",
+      "bytes": 6056,
+      "source_url": "https://drive.google.com/file/d/1CW2vC5fNm-rDjjk4H2y5ivOTZ5EEx1Cg/view"
+    },
+    {
+      "drive_id": "1mzRahv2QcIc7gJuST46SRIqhtsHUsCMn",
+      "source_path": "analysis/final/plots/1b_c_gpt5/r3_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1b_c_gpt5/r3_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "b5df8431df0135c77e8ea7193440a5595eb75607ebfe1815e406af96f0b2b57e",
+      "bytes": 6054,
+      "source_url": "https://drive.google.com/file/d/1mzRahv2QcIc7gJuST46SRIqhtsHUsCMn/view"
+    },
+    {
+      "drive_id": "1iANOgD4DRn_R38_IPKYwm5MkwxC27FFE",
+      "source_path": "analysis/final/plots/1b_c_gpt5/r4_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/1b_c_gpt5/r4_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "d2c6c911517860fc7bb64f724e83313aaff19ae7f7b8a1224da12111e07cdcb7",
+      "bytes": 6036,
+      "source_url": "https://drive.google.com/file/d/1iANOgD4DRn_R38_IPKYwm5MkwxC27FFE/view"
+    },
+    {
+      "drive_id": "1IodEM3hva0a2GeRT8-Fm0C8zhnwY0iCs",
+      "source_path": "analysis/final/plots/2a_q_gpt4/r1_vs_r2.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2a_q_gpt4/r1_vs_r2.pdf",
+      "mime": "application/pdf",
+      "sha256": "5e7435319eb9c7b34db87e8c97a4263ff237c73b559c317f44e629290e63bd6c",
+      "bytes": 5934,
+      "source_url": "https://drive.google.com/file/d/1IodEM3hva0a2GeRT8-Fm0C8zhnwY0iCs/view"
+    },
+    {
+      "drive_id": "1yqCGoTJst4NKAs2ROdqfHv70Fn0ie6cx",
+      "source_path": "analysis/final/plots/2a_q_gpt4/r1_vs_r3.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2a_q_gpt4/r1_vs_r3.pdf",
+      "mime": "application/pdf",
+      "sha256": "0620bb4ab0a7fb19c9e52fb49049214868f327067782a3a8b89f05d204dfd4ab",
+      "bytes": 6207,
+      "source_url": "https://drive.google.com/file/d/1yqCGoTJst4NKAs2ROdqfHv70Fn0ie6cx/view"
+    },
+    {
+      "drive_id": "17OWhP56EGXNJIn64fsZAz9fkRWoHCcFf",
+      "source_path": "analysis/final/plots/2a_q_gpt4/r1_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2a_q_gpt4/r1_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "3d2a438fcf76ae63c66c4693eb645b7ab8c5c3cf4ca65d76d47082f1956486d9",
+      "bytes": 6003,
+      "source_url": "https://drive.google.com/file/d/17OWhP56EGXNJIn64fsZAz9fkRWoHCcFf/view"
+    },
+    {
+      "drive_id": "1dAdVnVcDiSxKAO7txea99qrlgR5bMv6-",
+      "source_path": "analysis/final/plots/2a_q_gpt4/r1_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2a_q_gpt4/r1_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "99e521e7659c8e34659d8c4897719c0acc1982bdcdf1c96196bed29412f1f038",
+      "bytes": 6050,
+      "source_url": "https://drive.google.com/file/d/1dAdVnVcDiSxKAO7txea99qrlgR5bMv6-/view"
+    },
+    {
+      "drive_id": "1Lab_kNIF4JP8XQU3VN0LQUpt6tkPIO8Y",
+      "source_path": "analysis/final/plots/2a_q_gpt4/r1_vs_r6.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2a_q_gpt4/r1_vs_r6.pdf",
+      "mime": "application/pdf",
+      "sha256": "8461c147ce29216d34dd571058893697ac6fa3c1aa06f8a024718bbb68982939",
+      "bytes": 6523,
+      "source_url": "https://drive.google.com/file/d/1Lab_kNIF4JP8XQU3VN0LQUpt6tkPIO8Y/view"
+    },
+    {
+      "drive_id": "1BRlr1Y4kf9Bg7BF6-aUpFMR9838KBMX3",
+      "source_path": "analysis/final/plots/2a_q_gpt4/r2_vs_r3.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2a_q_gpt4/r2_vs_r3.pdf",
+      "mime": "application/pdf",
+      "sha256": "74637979de78760547225b425095fa817f2dfe099b95ff5f729153bb4a3758d4",
+      "bytes": 5981,
+      "source_url": "https://drive.google.com/file/d/1BRlr1Y4kf9Bg7BF6-aUpFMR9838KBMX3/view"
+    },
+    {
+      "drive_id": "1pfrpJPAdvVMwYCgUdQzyTEZ9oaAzRamT",
+      "source_path": "analysis/final/plots/2a_q_gpt4/r2_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2a_q_gpt4/r2_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "6704c73bf31dd943b3abcbd53a6d7562eb9e09afeb6b51d917c2376e42850671",
+      "bytes": 5766,
+      "source_url": "https://drive.google.com/file/d/1pfrpJPAdvVMwYCgUdQzyTEZ9oaAzRamT/view"
+    },
+    {
+      "drive_id": "157cVDuziZOH6mqTE0LcAJhjISu3BJAvn",
+      "source_path": "analysis/final/plots/2a_q_gpt4/r2_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2a_q_gpt4/r2_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "cc8774ad2a614882c5b5b038106e17988b15b3c2db813b90b09864d7273ac949",
+      "bytes": 5655,
+      "source_url": "https://drive.google.com/file/d/157cVDuziZOH6mqTE0LcAJhjISu3BJAvn/view"
+    },
+    {
+      "drive_id": "11p2SJs4F1t4HyqFqP0b_T24Y7un7ZbPh",
+      "source_path": "analysis/final/plots/2a_q_gpt4/r2_vs_r6.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2a_q_gpt4/r2_vs_r6.pdf",
+      "mime": "application/pdf",
+      "sha256": "43bbad4ed0026a85ccbdfdc25738a64861ee0c27f1f623e8e0263e300faa5260",
+      "bytes": 6359,
+      "source_url": "https://drive.google.com/file/d/11p2SJs4F1t4HyqFqP0b_T24Y7un7ZbPh/view"
+    },
+    {
+      "drive_id": "17aE3Qai3zRx69IceclTs0d4PrQoYxyY0",
+      "source_path": "analysis/final/plots/2a_q_gpt4/r3_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2a_q_gpt4/r3_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "e0eb2498895e45e21480c4930c67f709d61acd0ed0d7f4caf058e559f9b2e8a7",
+      "bytes": 6097,
+      "source_url": "https://drive.google.com/file/d/17aE3Qai3zRx69IceclTs0d4PrQoYxyY0/view"
+    },
+    {
+      "drive_id": "17qznn1VTtGbCexz2o-2kAv8DOXCglfTR",
+      "source_path": "analysis/final/plots/2a_q_gpt4/r3_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2a_q_gpt4/r3_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "f7cc5fd3b69198d14f5debe0332b9a0713f5e303ed5d8972cdb1c715e6e84bd9",
+      "bytes": 6119,
+      "source_url": "https://drive.google.com/file/d/17qznn1VTtGbCexz2o-2kAv8DOXCglfTR/view"
+    },
+    {
+      "drive_id": "1aqeV-Vf6mKi41fUHwxy7KIrFA5AdLGGv",
+      "source_path": "analysis/final/plots/2a_q_gpt4/r3_vs_r6.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2a_q_gpt4/r3_vs_r6.pdf",
+      "mime": "application/pdf",
+      "sha256": "2e67faf4180ea444ef5c331db84cf11a916d320b157ede7d67bb56b4744cb011",
+      "bytes": 6545,
+      "source_url": "https://drive.google.com/file/d/1aqeV-Vf6mKi41fUHwxy7KIrFA5AdLGGv/view"
+    },
+    {
+      "drive_id": "1CfciK07taP_sMtXNThBDzgvtLsVc_1Ht",
+      "source_path": "analysis/final/plots/2a_q_gpt4/r4_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2a_q_gpt4/r4_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "fb5d54ae82c226cd8beedd00e1dd6f85ce867c096b702ae987c29a5275be33f6",
+      "bytes": 6043,
+      "source_url": "https://drive.google.com/file/d/1CfciK07taP_sMtXNThBDzgvtLsVc_1Ht/view"
+    },
+    {
+      "drive_id": "1KxOW9TbbB1VBVmAUb8HXpm0YU6E_vZCU",
+      "source_path": "analysis/final/plots/2a_q_gpt4/r4_vs_r6.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2a_q_gpt4/r4_vs_r6.pdf",
+      "mime": "application/pdf",
+      "sha256": "dff3c7bb6d70cf8365e3e52c8bd3200e22863b91b08c5f8b2195a8e3d19070d7",
+      "bytes": 6508,
+      "source_url": "https://drive.google.com/file/d/1KxOW9TbbB1VBVmAUb8HXpm0YU6E_vZCU/view"
+    },
+    {
+      "drive_id": "1Z-fKMOH7PB3cESRAIzoJZUVw3CushYyx",
+      "source_path": "analysis/final/plots/2a_q_gpt4/r5_vs_r6.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2a_q_gpt4/r5_vs_r6.pdf",
+      "mime": "application/pdf",
+      "sha256": "0a68d68ec73dac6cadf36455e97b4e0ef1806b875eb00707d09b4c563f63682f",
+      "bytes": 6318,
+      "source_url": "https://drive.google.com/file/d/1Z-fKMOH7PB3cESRAIzoJZUVw3CushYyx/view"
+    },
+    {
+      "drive_id": "13gTpeF_HeeYRu9VxiZtDuLLzO6t0zw1a",
+      "source_path": "analysis/final/plots/2b_q_gpt5/r1_vs_r2.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2b_q_gpt5/r1_vs_r2.pdf",
+      "mime": "application/pdf",
+      "sha256": "75c2197db99e109d5e58de3492acaa3a4ffef897869330064a011c9d68317c6a",
+      "bytes": 5905,
+      "source_url": "https://drive.google.com/file/d/13gTpeF_HeeYRu9VxiZtDuLLzO6t0zw1a/view"
+    },
+    {
+      "drive_id": "1oo89ssuVDHuM7C8OaXwHSYYkyWqOVaav",
+      "source_path": "analysis/final/plots/2b_q_gpt5/r1_vs_r3.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2b_q_gpt5/r1_vs_r3.pdf",
+      "mime": "application/pdf",
+      "sha256": "1474c65a760900a5781ca2e5bf9fe2470eddd08324e6adc9a62bc18c7651f7de",
+      "bytes": 6207,
+      "source_url": "https://drive.google.com/file/d/1oo89ssuVDHuM7C8OaXwHSYYkyWqOVaav/view"
+    },
+    {
+      "drive_id": "1gX_0lpo9-mI5aOe3xnKUtuGcURVI2sgL",
+      "source_path": "analysis/final/plots/2b_q_gpt5/r1_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2b_q_gpt5/r1_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "2676c1388a8a97f3284ac93cee06ad21b4d5092d3f30f8577ce08e3712cdddfb",
+      "bytes": 6098,
+      "source_url": "https://drive.google.com/file/d/1gX_0lpo9-mI5aOe3xnKUtuGcURVI2sgL/view"
+    },
+    {
+      "drive_id": "1eT7PRFlEPaPP3D5M2wD_HId1OmdmgadX",
+      "source_path": "analysis/final/plots/2b_q_gpt5/r1_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2b_q_gpt5/r1_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "e83938ec63bc9ef0d940151ebe85b27fe7b13843ad8519bc30c43228721003df",
+      "bytes": 6000,
+      "source_url": "https://drive.google.com/file/d/1eT7PRFlEPaPP3D5M2wD_HId1OmdmgadX/view"
+    },
+    {
+      "drive_id": "11nF2mYO3QOUwY7_if462lyNMfvRh5PFX",
+      "source_path": "analysis/final/plots/2b_q_gpt5/r2_vs_r3.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2b_q_gpt5/r2_vs_r3.pdf",
+      "mime": "application/pdf",
+      "sha256": "a9819886a350873033fbc5bb4d984e814b9fe4fef98462f10c3b2456a2a6ca2d",
+      "bytes": 5899,
+      "source_url": "https://drive.google.com/file/d/11nF2mYO3QOUwY7_if462lyNMfvRh5PFX/view"
+    },
+    {
+      "drive_id": "15sXaA5z9zgibsa1zwc3R5dxnoh1lpuyb",
+      "source_path": "analysis/final/plots/2b_q_gpt5/r2_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2b_q_gpt5/r2_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "ae79b1bd8f433cd33af434b54734a85999e7c601e82ff7479be5c383c4db3c50",
+      "bytes": 5769,
+      "source_url": "https://drive.google.com/file/d/15sXaA5z9zgibsa1zwc3R5dxnoh1lpuyb/view"
+    },
+    {
+      "drive_id": "1Z4JjlJXE-UzltErgVJ1FBwJR517PzBRV",
+      "source_path": "analysis/final/plots/2b_q_gpt5/r2_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2b_q_gpt5/r2_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "bd34e6d1b61d03ae1293d3f0c25e5edca430dc9c15276498a386aacc0d4c5ee4",
+      "bytes": 5713,
+      "source_url": "https://drive.google.com/file/d/1Z4JjlJXE-UzltErgVJ1FBwJR517PzBRV/view"
+    },
+    {
+      "drive_id": "126TLBJeNqonb4PeQIzAmm-rAy_mcXJMk",
+      "source_path": "analysis/final/plots/2b_q_gpt5/r3_vs_r4.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2b_q_gpt5/r3_vs_r4.pdf",
+      "mime": "application/pdf",
+      "sha256": "a04b42fe96d50321e3b353bca9346f469534ef79fd7f511779fe4182ac42072f",
+      "bytes": 6129,
+      "source_url": "https://drive.google.com/file/d/126TLBJeNqonb4PeQIzAmm-rAy_mcXJMk/view"
+    },
+    {
+      "drive_id": "1CDwO66v8q6sQfLm4QWj--P7UMyUCGr-H",
+      "source_path": "analysis/final/plots/2b_q_gpt5/r3_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2b_q_gpt5/r3_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "5b72d91548cf4cfd71bf2ac5f9967c2be6a43811cb3f88254c2756b5d11c13f9",
+      "bytes": 6018,
+      "source_url": "https://drive.google.com/file/d/1CDwO66v8q6sQfLm4QWj--P7UMyUCGr-H/view"
+    },
+    {
+      "drive_id": "1pqGqRcpI-5JiuqAesW406WMTUJ3ewQiE",
+      "source_path": "analysis/final/plots/2b_q_gpt5/r4_vs_r5.pdf",
+      "destination": "outputs/human_evaluation/drive_import/plots/2b_q_gpt5/r4_vs_r5.pdf",
+      "mime": "application/pdf",
+      "sha256": "62849e1b7739dce200db8a029539ed396e60a8b1b5d553d5a4897d1e8d1bc4ad",
+      "bytes": 6072,
+      "source_url": "https://drive.google.com/file/d/1pqGqRcpI-5JiuqAesW406WMTUJ3ewQiE/view"
+    },
+    {
+      "drive_id": "1tTG-AS_8m94Da-6ImigGE74sH54qut68",
+      "source_path": "analysis/processing.Rmd",
+      "destination": "archive/drive_import/analysis/processing.Rmd",
+      "mime": "text/plain",
+      "sha256": "6894719f126e6e32b511935827ed29bc9f6379acb72408a2bef0959dcc682569",
+      "bytes": 10738,
+      "source_url": "https://drive.google.com/file/d/1tTG-AS_8m94Da-6ImigGE74sH54qut68/view"
+    },
+    {
+      "drive_id": "19hPI-I4EvaLpsv-OxnYsC5NFgrd1yGF7",
+      "source_path": "analysis/processing.pdf",
+      "destination": "archive/drive_import/analysis/processing.pdf",
+      "mime": "application/pdf",
+      "sha256": "65dacf5274724313887d32030cadc6eff1b4cebe0c8ed90c65f7ffe4669d0519",
+      "bytes": 301240,
+      "source_url": "https://drive.google.com/file/d/19hPI-I4EvaLpsv-OxnYsC5NFgrd1yGF7/view"
+    },
+    {
+      "drive_id": "1NEaQCVRuQPztPLk9YMddo2cmCSzSHePE",
+      "source_path": "analysis/processing_new.pdf",
+      "destination": "archive/drive_import/analysis/processing_new.pdf",
+      "mime": "application/pdf",
+      "sha256": "86e63032c1a4cb73027ceb5777485e820243671a1b56d87a26ac21036e9871b8",
+      "bytes": 316874,
+      "source_url": "https://drive.google.com/file/d/1NEaQCVRuQPztPLk9YMddo2cmCSzSHePE/view"
+    },
+    {
+      "drive_id": "1-A0JkwLFllXtQrHFeO8fF6Akwy2VThF5",
+      "source_path": "analysis/quant.typ",
+      "destination": "archive/drive_import/analysis/quant.typ",
+      "mime": "text/plain",
+      "sha256": "ef116b15d9046b19d0509a417cebe8d52d2b5ae89e9c99ac5f95f64cf1b01c4c",
+      "bytes": 10756,
+      "source_url": "https://drive.google.com/file/d/1-A0JkwLFllXtQrHFeO8fF6Akwy2VThF5/view"
+    },
+    {
+      "drive_id": "14_7FILI8NktDx0sjEkn175fw2FWT8Gi5",
+      "source_path": "analysis/quant.pdf",
+      "destination": "archive/drive_import/analysis/quant.pdf",
+      "mime": "application/pdf",
+      "sha256": "be7c8e16baf489fedd08dfe7fcccd327f0ae8229a44aa5fa0f1740085f546bad",
+      "bytes": 8166968,
+      "source_url": "https://drive.google.com/file/d/14_7FILI8NktDx0sjEkn175fw2FWT8Gi5/view"
+    }
+  ]
+}

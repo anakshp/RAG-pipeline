@@ -1,0 +1,359 @@
+---
+title: "Quantitative"
+author: "Group 6"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Results
+
+## Summary Stats
+
+- Find rating distributions in pg: 5--7.
+- Find list of highest to lowest rated questions in pg: 7--8.
+
+## Inter-Rater Reliability
+
+Inter-rater reliability was assessed using Krippendorff's $\alpha$ (ordinal) across 
+five raters and eight evaluation criteria. Overall agreement was low for both 
+models (GPT-4 $\alpha$ = 0.173, GPT-5 $\alpha$ = 0.0462; pg: 11), falling well below the commonlly accepted threshold of 0.667 [cite @krippendorff]. Agreement varied considerably across criteria: Ambiguity, Factuality, and Narrativity showed near-zero or negative $\alpha$ values, indicating systematic disagreement, while Repetition, Generalization, and Recall showed relatively higher though still insufficient 
+agreement (pg: 11--12). A sensitivity analysis excluding each rater individually showed that no single rater was responsible for the low agreement — the most impactful 
+exclusion (R3) improved GPT-4 $\alpha$ from 0.173 to 0.323, but left GPT-5 largely unchanged (pg: 12--15). This suggests the disagreement is structural, likely reflecting the inherent 
+subjectivity of certain criteria rather than individual rater error. Given this, 
+all five raters were retained for subsequent analyses.
+
+<!-- TODO: write this up properly -->
+<!-- GPT4 α = 0.162, GPT5 α = 0.035 -->
+<!-- Both below 0.667 threshold -->
+<!-- Worst: Ambiguity, Factuality, Narrativity -->
+<!-- Best: Repetetion, Generalization, Recall -->
+<!-- R3 sensitivity check: GPT4 → 0.283, GPT5 unchanged -->
+<!-- Conclusion: structural disagreement, not one rater -->
+
+## Paired samples t-test
+
+The Irrelevance criterion was excluded from inferential analyses due to a skewed distribution (ceiling effect), as inspection of its histogram revealed ratings concentrated at the higher end of the scale, violating the normality assumption.
+
+A paired samples t-test was conducted to compare ratings between GPT-4 (*M* = 3.31, *SD* = 0.949) and GPT-5 (*M* = 3.35, *SD* = 0.955) across seven criteria. No significant overall difference was found (*t*(565) = -1.04,*p* = .299, mean diff = -0.049, 95% CI [-0.143, 0.044]).
+
+Per-criterion analyses were conducted with Bonferroni correction applied(*$\alpha$* = .05/7 = .007). Two criteria showed significant differences after correction: GPT-4 was rated significantly higher on Narrativity (*t*(74) = 5.22, *p* < .001, *d* = 0.603), while GPT-5 was rated significantly higher on Factuality (*t*(74) = -3.20, *p* = .014, *d* = -0.370). Both represent medium effect sizes. Recall and Reduction showed uncorrected significant differences that did not survive Bonferroni correction (both *p* > .30 after correction).
+
+A limitation of this study is the small number of raters (*n* = 5). However, given the Central Limit Theorem, the aggregated ratings are expected to approximate a normal distribution, supporting the validity of parametric testing.
+
+
+# Data analysis R code
+
+## Preprocessing
+
+### Libraries
+```{r}
+library(tidyverse)
+library(ggpubr)
+library(irr)
+library(effectsize)
+```
+
+### Get individual CSVs
+```{r}
+files <- list.files(pattern = "\\.csv$")
+```
+
+### Append into one CSV and convert to long format
+```{r}
+complete <- lapply(files, function(f) {
+  read.csv(f) %>%
+    mutate(Rater = tools::file_path_sans_ext(basename(f)))
+}) %>%
+  bind_rows() %>%
+  relocate(Rater) %>% 
+  pivot_longer(
+    cols = -c(Rater, Question, Model),
+    names_to = "Criteria",
+    values_to = "Rating"
+    )
+# make sure ratings are numeric values
+complete$Rating <- as.numeric(complete$Rating)
+```
+
+### View complete data
+```{r}
+view(complete)
+head(complete)
+```
+
+## Summary
+
+```{r}
+summary(complete)
+
+# grouped by model and criteria
+complete %>% group_by(Model, Criteria) %>% 
+  summarise(across(Rating, list(mean=mean, sd=sd, min=min, max=max),
+                   na.rm = TRUE))
+```
+
+
+### Rating distribution per criteria
+* check if data is normally distributed
+```{r}
+complete.filtered <- complete %>%
+  filter(Model %in% c("GPT4", "GPT5")) %>%
+  filter(!is.na(Rating))
+
+# Overall overlay histogram (all criteria combined)
+
+ggplot(complete.filtered, aes(x = Rating, fill = Model)) +
+  geom_histogram(
+    binwidth = 1,
+    boundary = -0.5,
+    color = "white",
+    alpha = 0.6
+  ) +
+  facet_wrap(~Model) +
+  scale_x_continuous(breaks = c(1, 2, 3, 4, 5)) +
+  scale_fill_manual(values = c("GPT4" = "steelblue", "GPT5" = "tomato")) +
+  geom_vline(
+    data = complete.filtered %>%
+      group_by(Model) %>%
+      summarise(mean = mean(Rating, na.rm = TRUE)),
+    aes(xintercept = mean, color = Model),
+    linewidth = 0.8, linetype = "dashed"
+  ) +
+  scale_color_manual(values = c("GPT4" = "steelblue", "GPT5" = "tomato")) +
+  theme_pubr() +
+  ggtitle("Overall Rating Distribution: GPT-4 vs GPT-5")
+
+plot <- function(data, title) {
+    ggplot(data, aes(x = Rating)) +
+      
+    geom_histogram(
+      binwidth = 1,
+      boundary = -0.5,
+      fill = "steelblue",
+      color = "white"
+    ) +
+      
+    scale_x_continuous(
+      breaks = c(1, 2, 3, 4, 5)
+      ) +
+      
+    geom_vline(
+      data = data %>%
+        group_by(Criteria) %>%
+        summarise(mean = mean(Rating, na.rm = TRUE)),
+      aes(xintercept = mean),
+      colour = "deeppink",
+      linewidth = 0.7
+    ) +
+      
+    facet_wrap(~Criteria, ncol=4) +
+    theme_pubr() +
+    ggtitle(title)
+}
+  
+plot(filter(complete, Model=="GPT4"), "GPT-4")
+plot(filter(complete, Model=="GPT5"), "GPT-5")
+```
+
+```{r}
+# Highest rated questions
+complete.filtered %>%
+  group_by(Question, Model) %>%
+  summarise(M_Rating = mean(Rating, na.rm = TRUE), .groups = "drop") %>%
+  pivot_wider(names_from = Model, values_from = M_Rating) %>%
+  mutate(M_Overall = (GPT4 + GPT5) / 2) %>%
+  arrange(desc(M_Overall)) %>%
+  print(n = 24)
+```
+
+
+```{r}
+# Rater means and sd per model per criteria
+complete.filtered %>%
+  filter(!is.na(Rating)) %>%
+  group_by(Rater, Model, Criteria) %>%
+  summarise(mean_rating = mean(Rating), sd_rating = sd(Rating)) %>%
+  print(n = 80)
+
+```
+
+## Inference
+
+### Krippendorf's Alpha
+* test for inter-rater agreement
+```{r}
+check_without_rater <- function(rater) {
+  filtered <- complete.filtered %>% filter(Rater != rater)
+  
+  cat("Original rows:", nrow(complete.filtered), "\n")
+  cat("Filtered rows:", nrow(filtered), "\n")
+  cat("Remaining raters:", paste(unique(filtered$Rater), collapse = ", "), "\n\n")
+  
+  kripp.results <- filtered %>%
+  group_by(Model, Criteria) %>% 
+  group_modify(~{
+    mat <- .x %>% 
+      pivot_wider(names_from = Rater, values_from = Rating) %>% 
+      select(-Question) %>% 
+      as.matrix()
+    
+    result <- kripp.alpha(t(mat), method = "ordinal")
+    tibble(alpha = result$value)
+  }) %>% 
+    mutate(excluded = rater)
+  
+  kripp.results.excl.overall <- filtered %>%
+  group_by(Model) %>%
+  group_modify(~ {
+    mat <- .x %>%
+      pivot_wider(names_from = c(Rater), values_from = Rating,
+                  id_cols = c(Question, Criteria)) %>%
+      select(-c(Question, Criteria)) %>%
+      as.matrix()
+    result <- kripp.alpha(t(mat), method = "ordinal")
+    tibble(alpha = result$value)
+  })
+  
+  cat("=== Excluding", rater, "===\n\n")
+  cat("--- Per Model and Criteria ---\n")
+  print(kripp.results)
+  cat("\n--- Overall per Model ---\n")
+  print(kripp.results.excl.overall)
+  
+  return(kripp.results)
+}
+
+## exclude manually
+# check_without_rater("A")
+# check_without_rater("K")
+# check_without_rater("L")
+# check_without_rater("S")
+# check_without_rater("Y")
+# check_without_rater("")
+
+
+# 1. Baseline (outside function, already computed earlier)
+kripp.results.overall <- complete.filtered %>%
+  group_by(Model) %>%
+  group_modify(~ {
+    mat <- .x %>%
+      pivot_wider(names_from = c(Rater), values_from = Rating,
+                  id_cols = c(Question, Criteria)) %>%
+      select(-c(Question, Criteria)) %>%
+      as.matrix()
+    
+    result <- kripp.alpha(t(mat), method = "ordinal")
+    tibble(alpha = result$value)
+  })
+
+cat("=== Baseline Overall Alpha ===\n")
+print(kripp.results.overall)
+
+# 2. Per criteria alpha
+kripp.results <- complete.filtered %>%
+  group_by(Model, Criteria) %>% 
+  group_modify(~{
+    mat <- .x %>% 
+      pivot_wider(names_from = Rater, values_from = Rating) %>% 
+      select(-Question) %>% 
+      as.matrix()
+    
+    result <- kripp.alpha(t(mat), method = "ordinal")
+    tibble(alpha = result$value)
+  })
+
+cat("=== Per Model and Criteria ===\n")
+print(kripp.results)
+
+# 2. Sensitivity analysis
+exclusion_resutls <- map_dfr(c("A", "K", "L", "S", "Y"), check_without_rater)
+
+exclusion_resutls %>% 
+  group_by(Model, Criteria) %>% 
+  slice_max(alpha, n = 1) %>% 
+  select(Model, Criteria, best_exclusion = excluded, alpha)
+
+```
+
+### Paired t-test
+* test for model differences
+```{r}
+# make model ratings into wide format (for t-test)
+complete_wide <- complete %>% 
+  group_by(Rater, Question, Criteria, Model) %>% 
+  summarise(Rating = mean(Rating, na.rm = TRUE), .groups = "drop") %>% 
+  pivot_wider(
+    names_from = Model,
+    values_from = Rating
+  )
+
+head(complete_wide)
+
+# Summarise by model
+complete_wide %>%
+  summarise(
+    M_GPT4 = mean(GPT4, na.rm=TRUE), SD_GPT4 = sd(GPT4, na.rm=TRUE),
+    M_GPT5 = mean(GPT5, na.rm=TRUE), SD_GPT5 = sd(GPT5, na.rm=TRUE)
+  )
+
+# overall
+t.test(complete_wide$GPT4, complete_wide$GPT5, paired = TRUE)
+
+# group differences across raters
+t <- complete_wide %>%
+  group_by(Rater) %>%
+  summarise(
+    t_test = list(t.test(GPT4, GPT5, paired = TRUE)),
+    .groups = "drop"
+  )
+
+# cohen's d
+d_values <- complete_wide %>%
+  group_by(Criteria) %>%
+  summarise(
+    cohens_d = mean(GPT4 - GPT5, na.rm = TRUE) / sd(GPT4 - GPT5, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+# per criterion
+t_criteria <- complete_wide %>%
+  filter(Criteria != "Irrelevance") %>% # correction will apply for 7 tests
+  group_by(Criteria) %>%
+  summarise(
+    M_GPT4    = mean(GPT4, na.rm = TRUE),
+    SD_GPT4   = sd(GPT4, na.rm = TRUE),
+    M_GPT5    = mean(GPT5, na.rm = TRUE),
+    SD_GPT5   = sd(GPT5, na.rm = TRUE),
+    test      = list(t.test(GPT4, GPT5, paired = TRUE)),
+    .groups   = "drop"
+  ) %>%
+  mutate(
+    t_stat    = map_dbl(test, ~ .x$statistic),
+    df        = map_dbl(test, ~ .x$parameter),
+    p_value   = map_dbl(test, ~ .x$p.value),
+    p_bonferroni = p.adjust(p_value, method = "bonferroni"),
+    mean_diff = map_dbl(test, ~ .x$estimate),
+    ci_low    = map_dbl(test, ~ .x$conf.int[1]),
+    ci_high   = map_dbl(test, ~ .x$conf.int[2])
+  ) %>%
+  left_join(d_values, by = "Criteria") %>%
+  select(-test)
+
+
+print(t_criteria)
+print(d_values)
+
+```
+
+
+### Principal Component Analysis
+* test to see if criteria dimensions can be reduced
+```{r}
+
+# if there is time
+
+```

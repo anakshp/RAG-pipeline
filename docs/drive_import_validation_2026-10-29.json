@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-29",
+  "imported_files": 103,
+  "original_hashes_verified": 103,
+  "typst_image_references_checked": 75,
+  "rating_files": {
+    "r1.csv": {
+      "rows": 72,
+      "models": [
+        "GPT4",
+        "GPT5",
+        "RAG"
+      ]
+    },
+    "r2.csv": {
+      "rows": 39,
+      "models": [
+        "GPT4",
+        "GPT5",
+        "RAG"
+      ]
+    },
+    "r3.csv": {
+      "rows": 72,
+      "models": [
+        "GPT4",
+        "GPT5",
+        "RAG"
+      ]
+    },
+    "r4.csv": {
+      "rows": 72,
+      "models": [
+        "GPT4",
+        "GPT5",
+        "RAG"
+      ]
+    },
+    "r5.csv": {
+      "rows": 72,
+      "models": [
+        "GPT4",
+        "GPT5",
+        "RAG"
+      ]
+    },
+    "r6.csv": {
+      "rows": 48,
+      "models": [
+        "GPT4",
+        "RAG"
+      ]
+    }
+  },
+  "errors": [],
+  "limits": [
+    "R scripts were not executed; Rscript is unavailable in the current environment.",
+    "PDF file signatures and referenced paths were checked; charts and scientific results were not independently validated.",
+    "Original scripts were preserved; active scripts only adapt paths and guard interactive viewers."
+  ]
+}
